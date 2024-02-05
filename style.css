@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-light {
+    background: #ffffff;
+    color: black;
+}
+
+.main-dark {
+    background: black;
+    color: white;
+}
+
+img {
+    transform: rotate(90);
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-size: bold;
+}
+
+label {
+    font-size: medium;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+input {
+    border-radius: 10px;
+    padding: 7px;
+}
+
+#toggle {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+}
