@@ -16,7 +16,9 @@ if (mode === "light") {
 
 const submitForm = (event) => {
     event.preventDefault()
-    window.location.replace("/page2.html?username=" + name.value + "&" + "years=" + years.value)
+    // got to page2
+    window.location.replace("page2.html?username=" + name.value + "&" + "years=" + years.value)
+   // window.location.replace("/page2.html?username=" + name.value + "&" + "years=" + years.value)
 };
 
 const changeMode = (event) => {
