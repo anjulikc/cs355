@@ -14,12 +14,12 @@ if (mode === "light") {
     main.classList.add("main-dark")
 }
 
-const submitForm = (event) => {
-    event.preventDefault()
-    // got to page2
-    window.location.replace("page2.html?username=" + name.value + "&" + "years=" + years.value)
-   // window.location.replace("/page2.html?username=" + name.value + "&" + "years=" + years.value)
-};
+// const submitForm = (event) => {
+//     event.preventDefault()
+//     // got to page2
+//     window.location.replace("page2.html?username=" + name.value + "&" + "years=" + years.value)
+//    // window.location.replace("/page2.html?username=" + name.value + "&" + "years=" + years.value)
+// };
 
 const changeMode = (event) => {
     mode = mode === "light" ? "dark" : "light";
@@ -35,5 +35,5 @@ const changeMode = (event) => {
 }
 
 
-$("form").addEventListener("submit", submitForm)
+// $("form").addEventListener("submit", submitForm)
 toggle.addEventListener("click", changeMode)
