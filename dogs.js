@@ -21,5 +21,14 @@ function showImages() {
     getImage(breed);
   }, 5000);
 }
+fetch("https://dog.ceo/api/breeds/list/all").then(r=>r.json()).then(data=> {
+    const datalist=document.getElementById("breeds");
+    const breedslist=Object.keys(data.message);
+    breedslist.forEach(breed=>{
+        const option=document.createElement("option");
+        option.value=breed;
+        datalist.appendChild(option);
+    })
+})
 
 $("#d").addEventListener("click", showImages);
