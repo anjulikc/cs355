@@ -1,5 +1,8 @@
 const express = require('express'), // load express module
 app = express();
+const db = require('nedb-promises')
+db.create('db.jsonl')
+
 app.get('/', (req, res)=>{
 // initiate app
 // for GET / requests
